@@ -3253,6 +3253,13 @@ var palochkaVariants = {
 		]
 	},
 	{
+		description: 'Javanese Kusuma Kinanti',
+		inputmethod: 'jv-kusumakinanti',
+		tests: [
+			{ input: 'h', output: 'ꦲ꧀', description: 'ha with a virama' }
+		]
+	},
+	{
 		description: 'Georgian Transliteration test',
 		inputmethod: 'ka-transliteration',
 		tests: [
@@ -3314,6 +3321,13 @@ var palochkaVariants = {
 			{ input: '~A~a~U~u', output: 'A̱a̱U̱u̱', description: 'Jju tilde A̱a̱U̱u̱' },
 			{ input: 'n~a~/', output: 'ná̱', description: 'Jju tilde ná̱' },
 			{ input: 'zi~/', output: 'zí', description: 'Jju tilde zí' }
+		]
+	},
+	{
+		description: 'Kawi Kusuma Kinanti',
+		inputmethod: 'kaw-kusumakinanti',
+		tests: [
+			{ input: 'h', output: 'ꦲ꧀', description: 'ha with a virama' }
 		]
 	},
 	{

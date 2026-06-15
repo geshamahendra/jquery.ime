@@ -1,9 +1,9 @@
-( function ( $ ) {
+(function ($) {
 	'use strict';
 
 	// All keys have quotes for consistency
 	/* eslint-disable quote-props */
-	$.extend( $.ime.sources, {
+	$.extend($.ime.sources, {
 		'ach-tilde': {
 			name: 'Acholi tilde',
 			source: 'rules/ach/ach-tilde.js'
@@ -508,6 +508,10 @@
 			name: 'Transliteration',
 			source: 'rules/jv-java/jv-transliteration.js'
 		},
+		'jv-kusumakinanti': {
+			name: 'Jawa - Kusuma Kinanti',
+			source: 'rules/jv-java/jv-kusumakinanti.js'
+		},
 		'ka-kbd': {
 			name: 'სტანდარტული კლავიატურის',
 			source: 'rules/ka/ka-kbd.js'
@@ -523,6 +527,10 @@
 		'kaj-tilde': {
 			name: 'Jju tilde',
 			source: 'rules/kaj/kaj-tilde.js'
+		},
+		'kaw-kusumakinanti': {
+			name: 'Kawi - Kusuma Kinanti',
+			source: 'rules/kaw-kawi/kaw-kusumakinanti.js'
 		},
 		'kbp-tilde': {
 			name: 'Kabɩyɛ tilde',
@@ -1114,865 +1122,869 @@
 			name: '拼音符号输入法 / 拼音符號輸入法',
 			source: 'rules/zh/zh-latn-pinyin-transliteration.js'
 		}
-	} );
+	});
 	/* eslint-disable quote-props */
 
-	$.extend( $.ime.languages, {
+	$.extend($.ime.languages, {
 		abr: {
 			autonym: 'Abron',
-			inputmethods: [ 'ak-qx', 'ak-tilde' ]
+			inputmethods: ['ak-qx', 'ak-tilde']
 		},
 		ach: {
 			autonym: 'Acoli',
-			inputmethods: [ 'ach-tilde' ]
+			inputmethods: ['ach-tilde']
 		},
 		ady: {
 			autonym: 'адыгэбзэ',
-			inputmethods: [ 'cyrl-palochka' ]
+			inputmethods: ['cyrl-palochka']
 		},
 		af: {
 			autonym: 'Afrikaans',
-			inputmethods: [ 'af-tilde' ]
+			inputmethods: ['af-tilde']
 		},
 		ahr: {
 			autonym: 'अहिराणी',
-			inputmethods: [ 'mr-transliteration', 'mr-inscript' ]
+			inputmethods: ['mr-transliteration', 'mr-inscript']
 		},
 		ajg: {
 			autonym: 'ajagbe',
-			inputmethods: [ 'ajg-tilde' ]
+			inputmethods: ['ajg-tilde']
 		},
 		akb: {
 			autonym: 'Batak Angkola',
-			inputmethods: [ 'akb-keyboard' ]
+			inputmethods: ['akb-keyboard']
 		},
 		am: {
 			autonym: 'አማርኛ',
-			inputmethods: [ 'am-transliteration' ]
+			inputmethods: ['am-transliteration']
 		},
 		ann: {
 			autonym: 'Obolo',
-			inputmethods: [ 'ann-tilde' ]
+			inputmethods: ['ann-tilde']
 		},
 		ar: {
 			autonym: 'العربية',
-			inputmethods: [ 'ar-kbd' ]
+			inputmethods: ['ar-kbd']
 		},
 		as: {
 			autonym: 'অসমীয়া',
-			inputmethods: [ 'as-transliteration', 'as-avro', 'as-bornona', 'as-inscript', 'as-phonetic', 'as-inscript2', 'as-rodali' ]
+			inputmethods: ['as-transliteration', 'as-avro', 'as-bornona', 'as-inscript', 'as-phonetic', 'as-inscript2', 'as-rodali']
 		},
 		av: {
 			autonym: 'авар',
-			inputmethods: [ 'cyrl-palochka' ]
+			inputmethods: ['cyrl-palochka']
 		},
 		azb: {
 			autonym: 'تۆرکجه',
-			inputmethods: [ 'azb-kbd' ]
+			inputmethods: ['azb-kbd']
 		},
 		"ban-bali": {
 			autonym: 'ᬩᬮᬶ',
-			inputmethods: [ 'ban-transliteration' ]
+			inputmethods: ['ban-transliteration']
 		},
 		bas: {
 			autonym: 'ɓasaá',
-			inputmethods: [ 'bas-tilde', 'mul-cm' ]
+			inputmethods: ['bas-tilde', 'mul-cm']
 		},
 		bbc: {
 			autonym: 'Batak Toba',
-			inputmethods: [ 'bbc-transliteration' ]
+			inputmethods: ['bbc-transliteration']
 		},
 		bci: {
 			autonym: 'wawle',
-			inputmethods: [ 'bci-tilde' ]
+			inputmethods: ['bci-tilde']
 		},
 		be: {
 			autonym: 'беларуская',
-			inputmethods: [ 'be-transliteration', 'be-latin', 'be-kbd' ]
+			inputmethods: ['be-transliteration', 'be-latin', 'be-kbd']
 		},
 		'be-tarask': {
 			autonym: 'беларуская (тарашкевіца)',
-			inputmethods: [ 'be-transliteration', 'be-latin' ]
+			inputmethods: ['be-transliteration', 'be-latin']
 		},
 		bfa: {
 			autonym: 'Bari',
-			inputmethods: [ 'bfa-tilde' ]
+			inputmethods: ['bfa-tilde']
 		},
 		bgn: {
 			autonym: 'روچ کپتین بلوچی',
-			inputmethods: [ 'bgn-kbd' ]
+			inputmethods: ['bgn-kbd']
 		},
 		bh: {
 			autonym: 'भोजपुरी',
-			inputmethods: [ 'hi-transliteration' ]
+			inputmethods: ['hi-transliteration']
 		},
 		bho: {
 			autonym: 'भोजपुरी',
-			inputmethods: [ 'hi-transliteration' ]
+			inputmethods: ['hi-transliteration']
 		},
 		bin: {
 			autonym: 'Ẹdo',
-			inputmethods: [ 'bin-tilde' ]
+			inputmethods: ['bin-tilde']
 		},
 		bkm: {
 			autonym: 'Itaŋikom',
-			inputmethods: [ 'bkm-tilde', 'mul-cm' ]
+			inputmethods: ['bkm-tilde', 'mul-cm']
 		},
 		bm: {
 			autonym: 'Bamanankan',
-			inputmethods: [ 'bm-alt', 'bm-tilde' ]
+			inputmethods: ['bm-alt', 'bm-tilde']
 		},
 		bn: {
 			autonym: 'বাংলা',
-			inputmethods: [ 'bn-avro', 'bn-inscript', 'bn-nkb', 'bn-probhat', 'bn-inscript2' ]
+			inputmethods: ['bn-avro', 'bn-inscript', 'bn-nkb', 'bn-probhat', 'bn-inscript2']
 		},
 		bo: {
 			autonym: 'བོད་ཡིག།',
-			inputmethods: [ 'bo-ewts', 'bo-sambhota' ]
+			inputmethods: ['bo-ewts', 'bo-sambhota']
 		},
 		bol: {
 			autonym: 'bòo pìkkà',
-			inputmethods: [ 'bol-tilde' ]
+			inputmethods: ['bol-tilde']
 		},
 		bom: {
 			autonym: 'bèrom',
-			inputmethods: [ 'bom-tilde' ]
+			inputmethods: ['bom-tilde']
 		},
 		brx: {
 			autonym: 'बोड़ो',
-			inputmethods: [ 'brx-inscript', 'brx-inscript2' ]
+			inputmethods: ['brx-inscript', 'brx-inscript2']
 		},
 		btd: {
 			autonym: 'Batak Dairi',
-			inputmethods: [ 'btd-keyboard' ]
+			inputmethods: ['btd-keyboard']
 		},
 		btm: {
 			autonym: 'Batak Mandailing',
-			inputmethods: [ 'btm-keyboard', 'btm-transliteration' ]
+			inputmethods: ['btm-keyboard', 'btm-transliteration']
 		},
 		bts: {
 			autonym: 'Sahap Simalungun',
-			inputmethods: [ 'bts-keyboard' ]
+			inputmethods: ['bts-keyboard']
 		},
 		btx: {
 			autonym: 'cakap Karo',
-			inputmethods: [ 'btx-keyboard' ]
+			inputmethods: ['btx-keyboard']
 		},
 		btz: {
 			autonym: 'Batak Alas-Kluet',
-			inputmethods: [ 'btz-keyboard' ]
+			inputmethods: ['btz-keyboard']
 		},
 		bum: {
 			autonym: 'bulu',
-			inputmethods: [ 'mul-cm' ]
+			inputmethods: ['mul-cm']
 		},
 		bwr: {
 			autonym: 'bura',
-			inputmethods: [ 'bwr-tilde' ]
+			inputmethods: ['bwr-tilde']
 		},
 		byn: {
 			autonym: 'ብሊን',
-			inputmethods: [ 'byn-geezim' ]
+			inputmethods: ['byn-geezim']
 		},
 		byv: {
 			autonym: 'Mə̀dʉ̂mbɑ̀',
-			inputmethods: [ 'mul-cm' ]
+			inputmethods: ['mul-cm']
 		},
 		ce: {
 			autonym: 'нохчийн',
-			inputmethods: [ 'cyrl-palochka' ]
+			inputmethods: ['cyrl-palochka']
 		},
 		chn: {
 			autonym: 'chinook wawa',
-			inputmethods: [ 'chn-tilde' ]
+			inputmethods: ['chn-tilde']
 		},
 		chr: {
 			autonym: 'ᏣᎳᎩ',
-			inputmethods: [ 'chr-translit' ]
+			inputmethods: ['chr-translit']
 		},
 		ckb: {
 			autonym: 'کوردی',
-			inputmethods: [ 'ckb-transliteration-arkbd', 'ckb-transliteration-fakbd', 'ckb-transliteration-lakbd' ]
+			inputmethods: ['ckb-transliteration-arkbd', 'ckb-transliteration-fakbd', 'ckb-transliteration-lakbd']
 		},
 		cko: {
 			autonym: 'Anufɔ',
-			inputmethods: [ 'cko-tilde' ]
+			inputmethods: ['cko-tilde']
 		},
 		cv: {
 			autonym: 'Чăвашла',
-			inputmethods: [ 'cv-cyr-altgr', 'cv-lat-altgr', 'cv-cyr-numbers' ]
+			inputmethods: ['cv-cyr-altgr', 'cv-lat-altgr', 'cv-cyr-numbers']
 		},
 		da: {
 			autonym: 'Dansk',
-			inputmethods: [ 'da-normforms' ]
+			inputmethods: ['da-normforms']
 		},
 		dag: {
 			autonym: 'Dagbani',
-			inputmethods: [ 'dag-alt', 'dag-tilde' ]
+			inputmethods: ['dag-alt', 'dag-tilde']
 		},
 		dar: {
 			autonym: 'дарган',
-			inputmethods: [ 'cyrl-palochka' ]
+			inputmethods: ['cyrl-palochka']
 		},
 		ddn: {
 			autonym: 'dendi',
-			inputmethods: [ 'ddn-tilde' ]
+			inputmethods: ['ddn-tilde']
 		},
 		de: {
 			autonym: 'Deutsch',
-			inputmethods: [ 'de-transliteration' ]
+			inputmethods: ['de-transliteration']
 		},
 		dga: {
 			autonym: 'Dagaare',
-			inputmethods: [ 'mul-bf' ]
+			inputmethods: ['mul-bf']
 		},
 		din: {
 			autonym: 'Thuɔŋjäŋ',
-			inputmethods: [ 'din-fqsx', 'din-tilde' ]
+			inputmethods: ['din-fqsx', 'din-tilde']
 		},
 		diq: {
 			autonym: 'Kirdkî',
-			inputmethods: [ 'ku-h', 'ku-tr' ]
+			inputmethods: ['ku-h', 'ku-tr']
 		},
 		doi: {
 			autonym: 'डोगरी',
-			inputmethods: [ 'doi-inscript2' ]
+			inputmethods: ['doi-inscript2']
 		},
 		dua: {
 			autonym: 'Duálá',
-			inputmethods: [ 'dua-tilde' ]
+			inputmethods: ['dua-tilde']
 		},
 		ee: {
 			autonym: 'Èʋegbe',
-			inputmethods: [ 'ee-tilde' ]
+			inputmethods: ['ee-tilde']
 		},
 		efi: {
 			autonym: 'efịk',
-			inputmethods: [ 'efi-tilde' ]
+			inputmethods: ['efi-tilde']
 		},
 		ekp: {
 			autonym: 'ẹkpeye',
-			inputmethods: [ 'ekp-tilde' ]
+			inputmethods: ['ekp-tilde']
 		},
 		el: {
 			autonym: 'Ελληνικά',
-			inputmethods: [ 'el-kbd' ]
+			inputmethods: ['el-kbd']
 		},
 		en: {
 			autonym: 'English',
-			inputmethods: [ 'ipa-sil', 'ipa-x-sampa' ]
+			inputmethods: ['ipa-sil', 'ipa-x-sampa']
 		},
 		eo: {
 			autonym: 'Esperanto',
-			inputmethods: [ 'eo-transliteration', 'eo-h', 'eo-h-f', 'eo-plena', 'eo-q', 'eo-vi', 'eo-x' ]
+			inputmethods: ['eo-transliteration', 'eo-h', 'eo-h-f', 'eo-plena', 'eo-q', 'eo-vi', 'eo-x']
 		},
 		fa: {
 			autonym: 'فارسی',
-			inputmethods: [ 'fa-kbd' ]
+			inputmethods: ['fa-kbd']
 		},
 		fat: {
 			autonym: 'mfantse',
-			inputmethods: [ 'ak-qx', 'ak-tilde' ]
+			inputmethods: ['ak-qx', 'ak-tilde']
 		},
 		ff: {
 			autonym: 'Fulfulde',
-			inputmethods: [ 'ff-alt', 'ff-tilde' ]
+			inputmethods: ['ff-alt', 'ff-tilde']
 		},
 		fi: {
 			autonym: 'Suomi',
-			inputmethods: [ 'fi-transliteration' ]
+			inputmethods: ['fi-transliteration']
 		},
 		fo: {
 			autonym: 'Føroyskt',
-			inputmethods: [ 'fo-normforms' ]
+			inputmethods: ['fo-normforms']
 		},
 		fon: {
 			autonym: 'Fon',
-			inputmethods: [ 'fon-tilde' ]
+			inputmethods: ['fon-tilde']
 		},
 		fvr: {
 			autonym: 'poor’íŋ belé’ŋ',
-			inputmethods: [ 'fvr-tilde' ]
+			inputmethods: ['fvr-tilde']
 		},
 		fonipa: {
 			autonym: 'International Phonetic Alphabet',
-			inputmethods: [ 'ipa-sil', 'ipa-x-sampa' ]
+			inputmethods: ['ipa-sil', 'ipa-x-sampa']
 		},
 		gaa: {
 			autonym: 'Ga',
-			inputmethods: [ 'gaa-cqx', 'gaa-tilde' ]
+			inputmethods: ['gaa-cqx', 'gaa-tilde']
 		},
 		gom: {
 			autonym: 'गोंयची कोंकणी / Gõychi Konknni',
-			inputmethods: [ 'hi-transliteration', 'hi-inscript', 'gom-inscript2' ]
+			inputmethods: ['hi-transliteration', 'hi-inscript', 'gom-inscript2']
 		},
 		got: {
 			autonym: '𐌲𐌿𐍄𐌹𐍃𐌺𐌰 𐍂𐌰𐌶𐌳𐌰',
-			inputmethods: [ 'got-standard' ]
+			inputmethods: ['got-standard']
 		},
 		gu: {
 			autonym: 'ગુજરાતી',
-			inputmethods: [ 'gu-transliteration', 'gu-inscript', 'gu-inscript2', 'gu-phonetic' ]
+			inputmethods: ['gu-transliteration', 'gu-inscript', 'gu-inscript2', 'gu-phonetic']
 		},
 		gur: {
 			autonym: 'farefare',
-			inputmethods: [ 'gur-tilde' ]
+			inputmethods: ['gur-tilde']
 		},
 		ha: {
 			autonym: 'Hausa',
-			inputmethods: [ 'ha-tilde' ]
+			inputmethods: ['ha-tilde']
 		},
 		he: {
 			autonym: 'עברית',
-			inputmethods: [ 'he-standard-2012-extonly', 'he-standard-2012' ]
+			inputmethods: ['he-standard-2012-extonly', 'he-standard-2012']
 		},
 		hi: {
 			autonym: 'हिन्दी',
-			inputmethods: [ 'hi-transliteration', 'hi-inscript', 'hi-bolnagri', 'hi-phonetic', 'hi-inscript2' ]
+			inputmethods: ['hi-transliteration', 'hi-inscript', 'hi-bolnagri', 'hi-phonetic', 'hi-inscript2']
 		},
 		hne: {
 			autonym: 'छत्तीसगढ़ी',
-			inputmethods: [ 'hi-transliteration' ]
+			inputmethods: ['hi-transliteration']
 		},
 		hoc: {
 			autonym: '𑢹𑣉𑣉',
-			inputmethods: [ 'hoc-transliteration' ]
+			inputmethods: ['hoc-transliteration']
 		},
 		'hoc-latn': {
 			autonym: 'Ho',
-			inputmethods: [ 'hoc-latn-tilde' ]
+			inputmethods: ['hoc-latn-tilde']
 		},
 		hr: {
 			autonym: 'Hrvatski',
-			inputmethods: [ 'hr-kbd' ]
+			inputmethods: ['hr-kbd']
 		},
 		hy: {
 			autonym: 'հայերեն',
-			inputmethods: [ 'hy-ephonetic', 'hy-typewriter', 'hy-ephoneticalt', 'hy-emslegacy', 'hy-wmslegacy' ]
+			inputmethods: ['hy-ephonetic', 'hy-typewriter', 'hy-ephoneticalt', 'hy-emslegacy', 'hy-wmslegacy']
 		},
 		ibb: {
 			autonym: 'ibibio',
-			inputmethods: [ 'ibb-tilde' ]
+			inputmethods: ['ibb-tilde']
 		},
 		id: {
 			autonym: 'Bahasa Indonesia',
-			inputmethods: [ 'id-keyboard', 'id-jawi' ]
+			inputmethods: ['id-keyboard', 'id-jawi']
 		},
 		ig: {
 			autonym: 'Igbo',
-			inputmethods: [ 'ig-tilde' ]
+			inputmethods: ['ig-tilde']
 		},
 		igl: {
 			autonym: 'Igala',
-			inputmethods: [ 'igl-tilde' ]
+			inputmethods: ['igl-tilde']
 		},
 		inh: {
 			autonym: 'гӀалгӀай',
-			inputmethods: [ 'cyrl-palochka' ]
+			inputmethods: ['cyrl-palochka']
 		},
 		is: {
 			autonym: 'Íslenska',
-			inputmethods: [ 'is-normforms' ]
+			inputmethods: ['is-normforms']
 		},
 		ish: {
 			autonym: 'awain',
-			inputmethods: [ 'ish-tilde' ]
+			inputmethods: ['ish-tilde']
 		},
 		jab: {
 			autonym: 'Hyam',
-			inputmethods: [ 'jab-tilde' ]
+			inputmethods: ['jab-tilde']
 		},
 		jac: {
 			autonym: 'Abꞌxubꞌal Poptiꞌ',
-			inputmethods: [ 'jac-tilde' ]
+			inputmethods: ['jac-tilde']
 		},
 		jv: {
 			autonym: 'Jawa',
-			inputmethods: ['jv-keyboard', 'jv-transliteration', 'jv-kongres']
+			inputmethods: ['jv-keyboard', 'jv-transliteration', 'jv-kongres', 'jv-kusumakinanti']
 		},
 		'jv-java': {
 			autonym: 'ꦗꦮ',
-			inputmethods: [ 'jv-transliteration', 'jv-kongres' ,'jv-keyboard']
+			inputmethods: ['jv-transliteration', 'jv-kongres', 'jv-keyboard', 'jv-kusumakinanti']
 		},
 		ka: {
 			autonym: 'ქართული ენა',
-			inputmethods: [ 'ka-transliteration', 'ka-kbd' ]
+			inputmethods: ['ka-transliteration', 'ka-kbd']
 		},
 		kab: {
 			autonym: 'Taqbaylit / ⵜⴰⵇⴱⴰⵢⵍⵉⵜ',
-			inputmethods: [ 'kab-tilde', 'ber-tfng' ]
+			inputmethods: ['kab-tilde', 'ber-tfng']
 		},
 		kaj: {
 			autonym: 'Jju',
-			inputmethods: [ 'kaj-tilde' ]
+			inputmethods: ['kaj-tilde']
+		},
+		kaw: {
+			autonym: 'Kawi (𑼒𑼮𑼶)',
+			inputmethods: ['kaw-kusumakinanti']
 		},
 		kbd: {
 			autonym: 'адыгэбзэ (къэбэрдеибзэ)',
-			inputmethods: [ 'cyrl-palochka' ]
+			inputmethods: ['cyrl-palochka']
 		},
 		kbp: {
 			autonym: 'Kabɩyɛ',
-			inputmethods: [ 'kbp-tilde' ]
+			inputmethods: ['kbp-tilde']
 		},
 		kcg: {
 			autonym: 'Tyap',
-			inputmethods: [ 'kcg-tilde' ]
+			inputmethods: ['kcg-tilde']
 		},
 		ken: {
 			autonym: 'kɛ́nyáŋ',
-			inputmethods: [ 'mul-cm' ]
+			inputmethods: ['mul-cm']
 		},
 		ki: {
 			autonym: 'Gĩkũyũ',
-			inputmethods: [ 'ki-tilde' ]
+			inputmethods: ['ki-tilde']
 		},
 		kk: {
 			autonym: 'Қазақша',
-			inputmethods: [ 'kk-kbd', 'kk-arabic' ]
+			inputmethods: ['kk-kbd', 'kk-arabic']
 		},
 		km: {
 			autonym: 'ភាសា​ខ្មែរ',
-			inputmethods: [ 'km-nidakyk' ]
+			inputmethods: ['km-nidakyk']
 		},
 		kn: {
 			autonym: 'ಕನ್ನಡ',
-			inputmethods: [ 'kn-transliteration', 'kn-inscript', 'kn-kgp', 'kn-inscript2' ]
+			inputmethods: ['kn-transliteration', 'kn-inscript', 'kn-kgp', 'kn-inscript2']
 		},
 		ko: {
 			autonym: '한국어',
-			inputmethods: [ 'ko-rr' ]
+			inputmethods: ['ko-rr']
 		},
 		kr: {
 			autonym: 'kanuri',
-			inputmethods: [ 'kr-tilde' ]
+			inputmethods: ['kr-tilde']
 		},
 		kri: {
 			autonym: 'Krio',
-			inputmethods: [ 'kri-tilde' ]
+			inputmethods: ['kri-tilde']
 		},
 		ks: {
 			autonym: 'कॉशुर / کٲشُر',
-			inputmethods: [ 'ks-inscript', 'ks-kbd' ]
+			inputmethods: ['ks-inscript', 'ks-kbd']
 		},
 		ky: {
 			autonym: 'Кыргыз',
-			inputmethods: [ 'ky-cyrl-alt' ]
+			inputmethods: ['ky-cyrl-alt']
 		},
 		ku: {
 			autonym: 'Kurdî',
-			inputmethods: [ 'ku-h', 'ku-tr' ]
+			inputmethods: ['ku-h', 'ku-tr']
 		},
 		kus: {
 			autonym: 'Kʋsaal',
-			inputmethods: [ 'kus-tilde' ]
+			inputmethods: ['kus-tilde']
 		},
 		laj: {
 			autonym: 'Lëblaŋo',
-			inputmethods: [ 'laj-tilde' ]
+			inputmethods: ['laj-tilde']
 		},
 		lbe: {
 			autonym: 'лакку',
-			inputmethods: [ 'cyrl-palochka' ]
+			inputmethods: ['cyrl-palochka']
 		},
 		lez: {
 			autonym: 'лезги',
-			inputmethods: [ 'cyrl-palochka' ]
+			inputmethods: ['cyrl-palochka']
 		},
 		lg: {
 			autonym: 'Luganda',
-			inputmethods: [ 'lg-tilde' ]
+			inputmethods: ['lg-tilde']
 		},
 		ln: {
 			autonym: 'Lingála',
-			inputmethods: [ 'ln-tilde' ]
+			inputmethods: ['ln-tilde']
 		},
 		lo: {
 			autonym: 'ລາວ',
-			inputmethods: [ 'lo-kbd' ]
+			inputmethods: ['lo-kbd']
 		},
 		lrc: {
 			autonym: 'لۊری شومالی',
-			inputmethods: [ 'lrc-kbd' ]
+			inputmethods: ['lrc-kbd']
 		},
 		lud: {
 			autonym: 'lüüdi',
-			inputmethods: [ 'lud-transliteration' ]
+			inputmethods: ['lud-transliteration']
 		},
 		lut: {
 			autonym: 'dxʷləšucid',
-			inputmethods: [ 'lut-tulalip' ]
+			inputmethods: ['lut-tulalip']
 		},
 		mad: {
 			autonym: 'madhurâ',
-			inputmethods: [ 'mad-tilde' ]
+			inputmethods: ['mad-tilde']
 		},
 		mai: {
 			autonym: 'मैथिली',
-			inputmethods: [ 'mai-inscript', 'mai-inscript2' ]
+			inputmethods: ['mai-inscript', 'mai-inscript2']
 		},
 		maw: {
 			autonym: 'Ŋmampulli',
-			inputmethods: [ 'maw-tilde' ]
+			inputmethods: ['maw-tilde']
 		},
 		mg: {
 			autonym: 'Malagasy',
-			inputmethods: [ 'mg-tilde' ]
+			inputmethods: ['mg-tilde']
 		},
 		mh: {
 			autonym: 'Kajin M̧ajeļ',
-			inputmethods: [ 'mh-replace' ]
+			inputmethods: ['mh-replace']
 		},
 		ml: {
 			autonym: 'മലയാളം',
-			inputmethods: [ 'ml-transliteration', 'ml-inscript', 'ml-inscript2' ]
+			inputmethods: ['ml-transliteration', 'ml-inscript', 'ml-inscript2']
 		},
 		mn: {
 			autonym: 'Монгол',
-			inputmethods: [ 'mn-cyrl', 'mn-trad', 'mn-todo', 'mn-tradali', 'mn-todoali', 'phagspa' ]
+			inputmethods: ['mn-cyrl', 'mn-trad', 'mn-todo', 'mn-tradali', 'mn-todoali', 'phagspa']
 		},
 		mnc: {
 			autonym: 'ᠮᠠᠨᠵᡠ',
-			inputmethods: [ 'mnc-scripts', 'mnc-ali' ]
+			inputmethods: ['mnc-scripts', 'mnc-ali']
 		},
 		mni: {
 			autonym: 'Manipuri',
-			inputmethods: [ 'mni-inscript2' ]
+			inputmethods: ['mni-inscript2']
 		},
 		mns: {
 			autonym: 'ма̄ньси',
-			inputmethods: [ 'mns-backslash' ]
+			inputmethods: ['mns-backslash']
 		},
 		mnw: {
 			autonym: 'ဘာသာမန်',
-			inputmethods: [ 'mnw-simplified-anonta' ]
+			inputmethods: ['mnw-simplified-anonta']
 		},
 		mos: {
 			autonym: 'moore',
-			inputmethods: [ 'mul-bf' ]
+			inputmethods: ['mul-bf']
 		},
 		mr: {
 			autonym: 'मराठी',
-			inputmethods: [ 'mr-transliteration', 'mr-inscript2', 'mr-inscript', 'mr-phonetic' ]
+			inputmethods: ['mr-transliteration', 'mr-inscript2', 'mr-inscript', 'mr-phonetic']
 		},
 		my: {
 			autonym: 'မြန်မာ',
-			inputmethods: [ 'my-mm3', 'my-xkb' ]
+			inputmethods: ['my-mm3', 'my-xkb']
 		},
 		nan: {
 			autonym: '閩南語 / Bân-lâm-gí',
-			inputmethods: [ 'nan-latn-pehoeji-transliteration' ]
+			inputmethods: ['nan-latn-pehoeji-transliteration']
 		},
 		'nan-hani': {
 			autonym: '閩南語（漢字）',
-			inputmethods: [ 'nan-latn-pehoeji-transliteration' ]
+			inputmethods: ['nan-latn-pehoeji-transliteration']
 		},
 		'nan-hant': {
 			autonym: '閩南語（傳統漢字）',
-			inputmethods: [ 'nan-latn-pehoeji-transliteration' ]
+			inputmethods: ['nan-latn-pehoeji-transliteration']
 		},
 		'nan-latn-pehoeji': {
 			autonym: 'Bân-lâm-gí (Pe̍h-ōe-jī)',
-			inputmethods: [ 'nan-latn-pehoeji-transliteration' ]
+			inputmethods: ['nan-latn-pehoeji-transliteration']
 		},
 		'nan-latn-tailo': {
 			autonym: 'Bân-lâm-gí (Tâi-lô)',
-			inputmethods: [ 'nan-latn-pehoeji-transliteration' ]
+			inputmethods: ['nan-latn-pehoeji-transliteration']
 		},
 		naq: {
 			autonym: 'Khoekhoegowab',
-			inputmethods: [ 'mul-click-tilde' ]
+			inputmethods: ['mul-click-tilde']
 		},
 		nb: {
 			autonym: 'Norsk (bokmål)',
-			inputmethods: [ 'nb-normforms', 'nb-tildeforms' ]
+			inputmethods: ['nb-normforms', 'nb-tildeforms']
 		},
 		ne: {
 			autonym: 'नेपाली',
-			inputmethods: [ 'ne-transliteration', 'ne-inscript2', 'ne-inscript', 'ne-rom', 'ne-trad' ]
+			inputmethods: ['ne-transliteration', 'ne-inscript2', 'ne-inscript', 'ne-rom', 'ne-trad']
 		},
 		'new': {
 			autonym: 'नेपाल भाषा',
-			inputmethods: [ 'hi-transliteration', 'hi-inscript' ]
+			inputmethods: ['hi-transliteration', 'hi-inscript']
 		},
 		nia: {
 			autonym: 'li niha',
-			inputmethods: [ 'nia-tilde' ]
+			inputmethods: ['nia-tilde']
 		},
 		nmz: {
 			autonym: 'nawdm',
-			inputmethods: [ 'nmz-tilde' ]
+			inputmethods: ['nmz-tilde']
 		},
 		nn: {
 			autonym: 'Norsk (nynorsk)',
-			inputmethods: [ 'nb-normforms', 'nb-tildeforms' ]
+			inputmethods: ['nb-normforms', 'nb-tildeforms']
 		},
 		nnh: {
 			autonym: 'ngiembɔɔn',
-			inputmethods: [ 'mul-cm' ]
+			inputmethods: ['mul-cm']
 		},
 		nqo: {
 			autonym: 'ߒߞߏ',
-			inputmethods: [ 'nqo-standard-qwerty', 'nqo-transliteration' ]
+			inputmethods: ['nqo-standard-qwerty', 'nqo-transliteration']
 		},
 		nso: {
 			autonym: 'Sesotho sa Leboa',
-			inputmethods: [ 'nso-tilde' ]
+			inputmethods: ['nso-tilde']
 		},
 		nus: {
 			autonym: 'Thok Naath',
-			inputmethods: [ 'nus-tilde' ]
+			inputmethods: ['nus-tilde']
 		},
 		ny: {
 			autonym: 'Chichewa',
-			inputmethods: [ 'ny-tilde' ]
+			inputmethods: ['ny-tilde']
 		},
 		nzi: {
 			autonym: 'Nzema',
-			inputmethods: [ 'ak-tilde' ]
+			inputmethods: ['ak-tilde']
 		},
 		or: {
 			autonym: 'ଓଡ଼ିଆ',
-			inputmethods: [ 'or-phonetic', 'or-transliteration', 'or-inscript', 'or-inscript2', 'or-lekhani', 'or-OdiScript' ]
+			inputmethods: ['or-phonetic', 'or-transliteration', 'or-inscript', 'or-inscript2', 'or-lekhani', 'or-OdiScript']
 		},
 		pa: {
 			autonym: 'ਪੰਜਾਬੀ',
-			inputmethods: [ 'pa-transliteration', 'pa-inscript', 'pa-phonetic', 'pa-inscript2', 'pa-jhelum' ]
+			inputmethods: ['pa-transliteration', 'pa-inscript', 'pa-phonetic', 'pa-inscript2', 'pa-jhelum']
 		},
 		pms: {
 			autonym: 'Piemontèis',
-			inputmethods: [ 'pms' ]
+			inputmethods: ['pms']
 		},
 		pnt: {
 			autonym: 'Ποντιακά',
-			inputmethods: [ 'pnt-tilde' ]
+			inputmethods: ['pnt-tilde']
 		},
 		pwo: {
 			autonym: 'ဖျိၩ့ၡိ',
-			inputmethods: [ 'pwo-tilde' ]
+			inputmethods: ['pwo-tilde']
 		},
 		raj: {
 			autonym: 'राजस्थानी',
-			inputmethods: [ 'hi-transliteration', 'hi-inscript', 'hi-bolnagri', 'hi-phonetic', 'hi-inscript2' ]
+			inputmethods: ['hi-transliteration', 'hi-inscript', 'hi-bolnagri', 'hi-phonetic', 'hi-inscript2']
 		},
 		rif: {
 			autonym: 'ⵜⴰⵔⵉⴼⵉⵜ',
-			inputmethods: [ 'ber-tfng' ]
+			inputmethods: ['ber-tfng']
 		},
 		'roa-tara': {
 			autonym: 'Tarandine',
-			inputmethods: [ 'roa-tara-GVU' ]
+			inputmethods: ['roa-tara-GVU']
 		},
 		ru: {
 			autonym: 'русский',
-			inputmethods: [ 'ru-jcuken', 'ru-kbd', 'ru-phonetic', 'ru-yawerty' ]
+			inputmethods: ['ru-jcuken', 'ru-kbd', 'ru-phonetic', 'ru-yawerty']
 		},
 		sa: {
 			autonym: 'संस्कृत',
-			inputmethods: [ 'sa-transliteration', 'sa-inscript2', 'sa-inscript', 'sa-iast' ]
+			inputmethods: ['sa-transliteration', 'sa-inscript2', 'sa-inscript', 'sa-iast']
 		},
 		sah: {
 			autonym: 'саха тыла',
-			inputmethods: [ 'sah-transliteration' ]
+			inputmethods: ['sah-transliteration']
 		},
 		sat: {
 			autonym: 'ᱥᱟᱱᱛᱟᱞᱤ (संताली)',
-			inputmethods: [ 'sat-sarjom-baha', 'sat-inscript2-ol-chiki', 'sat-inscript2' ]
+			inputmethods: ['sat-sarjom-baha', 'sat-inscript2-ol-chiki', 'sat-inscript2']
 		},
 		sd: {
 			autonym: 'सिंधी',
-			inputmethods: [ 'sd-inscript2' ]
+			inputmethods: ['sd-inscript2']
 		},
 		sdh: {
 			autonym: 'کوردی خوارگ',
-			inputmethods: [ 'sdh-kbd' ]
+			inputmethods: ['sdh-kbd']
 		},
 		se: {
 			autonym: 'Davvisámegiella',
-			inputmethods: [ 'se-normforms' ]
+			inputmethods: ['se-normforms']
 		},
 		ses: {
 			autonym: 'Koyraboro Senni',
-			inputmethods: [ 'ses-tilde' ]
+			inputmethods: ['ses-tilde']
 		},
 		sg: {
 			autonym: 'Sängö',
-			inputmethods: [ 'sg-tilde' ]
+			inputmethods: ['sg-tilde']
 		},
 		sgh: {
 			autonym: 'xuɣ̌nůni',
-			inputmethods: [ 'sgh-tilde' ]
+			inputmethods: ['sgh-tilde']
 		},
 		shi: {
 			autonym: 'ⵜⴰⵛⵍⵃⵉⵜ',
-			inputmethods: [ 'ber-tfng' ]
+			inputmethods: ['ber-tfng']
 		},
 		shn: {
 			autonym: 'တႆး',
-			inputmethods: [ 'shn-standard' ]
+			inputmethods: ['shn-standard']
 		},
 		si: {
 			autonym: 'සිංහල',
-			inputmethods: [ 'si-singlish', 'si-wijesekara' ]
+			inputmethods: ['si-singlish', 'si-wijesekara']
 		},
 		sjo: {
 			autonym: 'ᠰᡞᠪᡝ',
-			inputmethods: [ 'sjo-scripts' ]
+			inputmethods: ['sjo-scripts']
 		},
 		sk: {
 			autonym: 'Slovenčina',
-			inputmethods: [ 'sk-kbd' ]
+			inputmethods: ['sk-kbd']
 		},
 		sr: {
 			autonym: 'Српски / srpski',
-			inputmethods: [ 'sr-kbd' ]
+			inputmethods: ['sr-kbd']
 		},
 		st: {
 			autonym: 'Sesotho',
-			inputmethods: [ 'st-tilde' ]
+			inputmethods: ['st-tilde']
 		},
 		str: {
 			autonym: 'SENĆOŦEN',
-			inputmethods: [ 'str-sencoten' ]
+			inputmethods: ['str-sencoten']
 		},
 		su: {
 			autonym: 'Sunda',
-			inputmethods: [ 'su-keyboard' ]
+			inputmethods: ['su-keyboard']
 		},
 		sv: {
 			autonym: 'Svenska',
-			inputmethods: [ 'sv-normforms' ]
+			inputmethods: ['sv-normforms']
 		},
 		szl: {
 			autonym: 'Ślůnski',
-			inputmethods: [ 'szl-tilde' ]
+			inputmethods: ['szl-tilde']
 		},
 		ta: {
 			autonym: 'தமிழ்',
-			inputmethods: [ 'ta-transliteration', 'ta-99', 'ta-inscript', 'ta-bamini', 'ta-inscript2' ]
+			inputmethods: ['ta-transliteration', 'ta-99', 'ta-inscript', 'ta-bamini', 'ta-inscript2']
 		},
 		tcy: {
 			autonym: 'ತುಳು',
-			inputmethods: [ 'kn-transliteration', 'kn-inscript', 'kn-kgp', 'kn-inscript2' ]
+			inputmethods: ['kn-transliteration', 'kn-inscript', 'kn-kgp', 'kn-inscript2']
 		},
 		te: {
 			autonym: 'తెలుగు',
-			inputmethods: [ 'te-transliteration', 'te-inscript', 'te-inscript2', 'te-apple', 'te-modular' ]
+			inputmethods: ['te-transliteration', 'te-inscript', 'te-inscript2', 'te-apple', 'te-modular']
 		},
 		th: {
 			autonym: 'ไทย',
-			inputmethods: [ 'th-kedmanee', 'th-pattachote' ]
+			inputmethods: ['th-kedmanee', 'th-pattachote']
 		},
 		ti: {
 			autonym: 'ትግርኛ',
-			inputmethods: [ 'ti-geezim' ]
+			inputmethods: ['ti-geezim']
 		},
 		tig: {
 			autonym: 'ትግሬ',
-			inputmethods: [ 'tig-geezim' ]
+			inputmethods: ['tig-geezim']
 		},
 		tiv: {
 			autonym: 'tiv',
-			inputmethods: [ 'tiv-tilde' ]
+			inputmethods: ['tiv-tilde']
 		},
 		tkr: {
 			autonym: 'цӀаӀхна миз',
-			inputmethods: [ 'cyrl-palochka' ]
+			inputmethods: ['cyrl-palochka']
 		},
 		tn: {
 			autonym: 'Setswana',
-			inputmethods: [ 'tn-tilde' ]
+			inputmethods: ['tn-tilde']
 		},
 		tum: {
 			autonym: 'ChiTumbuka',
-			inputmethods: [ 'tum-tilde' ]
+			inputmethods: ['tum-tilde']
 		},
 		tw: {
 			autonym: 'Twi',
-			inputmethods: [ 'ak-qx', 'ak-tilde' ]
+			inputmethods: ['ak-qx', 'ak-tilde']
 		},
 		tzm: {
 			autonym: 'ⵜⴰⵎⴰⵣⵉⵖⵜ',
-			inputmethods: [ 'ber-tfng' ]
+			inputmethods: ['ber-tfng']
 		},
 		udm: {
 			autonym: 'удмурт',
-			inputmethods: [ 'udm-alt' ]
+			inputmethods: ['udm-alt']
 		},
 		uk: {
 			autonym: 'Українська',
-			inputmethods: [ 'uk-kbd' ]
+			inputmethods: ['uk-kbd']
 		},
 		ur: {
 			autonym: 'اردو',
-			inputmethods: [ 'ur-transliteration', 'ur-phonetic' ]
+			inputmethods: ['ur-transliteration', 'ur-phonetic']
 		},
 		uz: {
 			autonym: 'Oʻzbekcha',
-			inputmethods: [ 'uz-kbd' ]
+			inputmethods: ['uz-kbd']
 		},
 		vai: {
 			autonym: 'ꕙꔤ',
-			inputmethods: [ 'vai-transliteration' ]
+			inputmethods: ['vai-transliteration']
 		},
 		ve: {
 			autonym: 'TshiVenḓa',
-			inputmethods: [ 've-tilde' ]
+			inputmethods: ['ve-tilde']
 		},
 		vec: {
 			autonym: 'Vèneto',
-			inputmethods: [ 'vec-GVU' ]
+			inputmethods: ['vec-GVU']
 		},
 		wlx: {
 			autonym: 'Waale',
-			inputmethods: [ 'wlx-tilde' ]
+			inputmethods: ['wlx-tilde']
 		},
 		wo: {
 			autonym: 'Wolof',
-			inputmethods: [ 'wo-alt', 'wo-tilde' ]
+			inputmethods: ['wo-alt', 'wo-tilde']
 		},
 		xon: {
 			autonym: 'Likpakpaanl',
-			inputmethods: [ 'xon-tilde' ]
+			inputmethods: ['xon-tilde']
 		},
 		yo: {
 			autonym: 'Yorùbá',
-			inputmethods: [ 'yo-alt', 'yo-tilde' ]
+			inputmethods: ['yo-alt', 'yo-tilde']
 		},
 		zh: {
 			autonym: '中文',
-			inputmethods: [ 'zh-latn-pinyin-transliteration' ]
+			inputmethods: ['zh-latn-pinyin-transliteration']
 		},
 		'zh-cn': {
 			autonym: '中文（中国大陆）',
-			inputmethods: [ 'zh-latn-pinyin-transliteration' ]
+			inputmethods: ['zh-latn-pinyin-transliteration']
 		},
 		'zh-hans': {
 			autonym: '中文（简体）',
-			inputmethods: [ 'zh-latn-pinyin-transliteration' ]
+			inputmethods: ['zh-latn-pinyin-transliteration']
 		},
 		'zh-hant': {
 			autonym: '中文（繁體）',
-			inputmethods: [ 'zh-latn-pinyin-transliteration' ]
+			inputmethods: ['zh-latn-pinyin-transliteration']
 		},
 		'zh-hk': {
 			autonym: '中文（香港）',
-			inputmethods: [ 'zh-latn-pinyin-transliteration' ]
+			inputmethods: ['zh-latn-pinyin-transliteration']
 		},
 		'zh-mo': {
 			autonym: '中文（澳門）',
-			inputmethods: [ 'zh-latn-pinyin-transliteration' ]
+			inputmethods: ['zh-latn-pinyin-transliteration']
 		},
 		'zh-my': {
 			autonym: '中文（马来西亚）',
-			inputmethods: [ 'zh-latn-pinyin-transliteration' ]
+			inputmethods: ['zh-latn-pinyin-transliteration']
 		},
 		'zh-sg': {
 			autonym: '中文（新加坡）',
-			inputmethods: [ 'zh-latn-pinyin-transliteration' ]
+			inputmethods: ['zh-latn-pinyin-transliteration']
 		},
 		'zh-tw': {
 			autonym: '中文（臺灣）',
-			inputmethods: [ 'zh-latn-pinyin-transliteration' ]
+			inputmethods: ['zh-latn-pinyin-transliteration']
 		}
-	} );
-}( jQuery ) );
+	});
+}(jQuery));
