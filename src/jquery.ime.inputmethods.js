@@ -508,9 +508,9 @@
 			name: 'Transliteration',
 			source: 'rules/jv-java/jv-transliteration.js'
 		},
-		'jv-kusumakinanti': {
-			name: 'Jawa - Kusuma Kinanti',
-			source: 'rules/jv-java/jv-kusumakinanti.js'
+		'jv-manuscript': {
+			name: 'Jawa - Manuscript',
+			source: 'rules/jv-java/jv-manuscript.js'
 		},
 		'ka-kbd': {
 			name: 'სტანდარტული კლავიატურის',
@@ -528,9 +528,9 @@
 			name: 'Jju tilde',
 			source: 'rules/kaj/kaj-tilde.js'
 		},
-		'kaw-kusumakinanti': {
-			name: 'Kawi - Kusuma Kinanti',
-			source: 'rules/kaw-kawi/kaw-kusumakinanti.js'
+		'kaw-manuscript': {
+			name: 'Kawi - Manuscript',
+			source: 'rules/kaw-kawi/kaw-manuscript.js'
 		},
 		'kbp-tilde': {
 			name: 'Kabɩyɛ tilde',
@@ -1496,11 +1496,11 @@
 		},
 		jv: {
 			autonym: 'Jawa',
-			inputmethods: ['jv-keyboard', 'jv-transliteration', 'jv-kongres', 'jv-kusumakinanti']
+			inputmethods: ['jv-keyboard', 'jv-transliteration', 'jv-kongres', 'jv-manuscript']
 		},
 		'jv-java': {
 			autonym: 'ꦗꦮ',
-			inputmethods: ['jv-transliteration', 'jv-kongres', 'jv-keyboard', 'jv-kusumakinanti']
+			inputmethods: ['jv-transliteration', 'jv-kongres', 'jv-keyboard', 'jv-manuscript']
 		},
 		ka: {
 			autonym: 'ქართული ენა',
@@ -1516,7 +1516,7 @@
 		},
 		kaw: {
 			autonym: 'Kawi (𑼒𑼮𑼶)',
-			inputmethods: ['kaw-kusumakinanti']
+			inputmethods: ['kaw-manuscript']
 		},
 		kbd: {
 			autonym: 'адыгэбзэ (къэбэрдеибзэ)',

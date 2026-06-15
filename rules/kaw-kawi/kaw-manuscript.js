@@ -6,10 +6,10 @@
 	const non_3_stack = '[𑼒𑼓𑼔𑼕𑼖𑼗𑼘𑼙𑼚𑼛𑼜𑼝𑼞𑼟𑼠𑼡𑼢𑼣𑼤𑼥𑼨𑼩𑼪𑼭𑼮𑼯]';
 
 
-	var kawkusumakinanti = {
-		id: 'kaw-kusumakinanti',
+	var kawmanuscipt = {
+		id: 'kaw-manuscript',
 		name: 'Kawi',
-		description: 'Kawi Kusuma Kinanti',
+		description: 'Kawi Manuscript',
 		date: '2026-06-15',
 		URL: '',
 		author: 'Gesha Mahendra',
@@ -860,5 +860,5 @@
 		]
 	};
 
-	$.ime.register(kawkusumakinanti);
+	$.ime.register(kawmanuscipt);
 }(jQuery));
