@@ -21,6 +21,22 @@
 		patterns: [
 			// Escape backslash (dari ULS asli, tetap dipertahankan)
 			['\\\\([A-Za-z\\>_~\\.0-9])', '\\\\', '$1'],
+			
+			// long tarung fixup
+			['𑼖a', '𑼖𑼵'],
+			['𑼖𑽁o' , '𑼖𑼾𑼵'],
+			
+			['𑼜a' , '𑼜𑼵'],
+			['𑼜𑽁o' , '𑼜𑼾𑼵'],
+			
+			['𑼨a' , '𑼨𑼵'],
+			['𑼨𑽁o' , '𑼨𑼾𑼵'],
+			
+			['𑼦a' , '𑼦𑼵'],
+			['𑼦𑽁o' , '𑼦𑼾𑼵'],
+			
+			['𑼭a' , '𑼭𑼵'],
+			['𑼭𑽁o' , '𑼭𑼾𑼵'],
 
 			// sigeg
 			['(' + all_aksara + ')𑼖𑽁 ', '$1𑼁'],
