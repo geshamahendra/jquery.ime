@@ -309,6 +309,13 @@ var palochkaVariants = {
 			]
 		},
 		{
+			description: 'Balinese test',
+			inputmethod: 'ban-manuscript',
+			tests: [
+				{ input: 'tanwarnanrilawasniraarqjamanoharahinunixanix wwaxix puri', output: 'ᬢᬦ᭄ᬯᬃᬡ᭄ᬦᬦ᭄ᬭᬶᬮᬯᬲ᭄ᬦᬶᬭᬵᬋᬚᬫᬦᭀᬳᬭᬳᬶᬦᬸᬦᬶᬗᬦᬶᬂᬯ᭄ᬯᬗᬶᬂᬧᬸᬭᬶ᭞', description: 'sample writing: Kakawin Sutasoma' }
+			]
+		},
+		{
 			description: 'Basaa tilde test',
 			inputmethod: 'bas-tilde',
 			tests: [

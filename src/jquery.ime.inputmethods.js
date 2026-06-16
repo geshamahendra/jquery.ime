@@ -76,6 +76,10 @@
 			name: 'Balinese Transliteration',
 			source: 'rules/ban/ban-transliteration.js'
 		},
+		'ban-manuscript': {
+			name: 'Balinese Manuscript',
+			source: 'rules/ban/ban-manuscript.js'
+		},
 		'bas-tilde': {
 			name: 'Ɓasaá tilde',
 			source: 'rules/bas/bas-tilde.js'
@@ -1179,8 +1183,8 @@
 			inputmethods: ['azb-kbd']
 		},
 		"ban-bali": {
-			autonym: 'ᬩᬮᬶ',
-			inputmethods: ['ban-transliteration']
+			autonym: 'Bali (ᬩᬮᬶ)',
+			inputmethods: ['ban-transliteration', 'ban-manuscript']
 		},
 		bas: {
 			autonym: 'ɓasaá',

@@ -550,8 +550,6 @@
 			['(' + consonant_a + ')𑽁\u25CC,', '$1𑽁𑽉'],
 
 			// special case : cakra & pengkal
-			//['(' + consonant_a + ')𑽁r', '$1𑽂𑼬𑽁'],
-			//['(' + consonant_a + ')𑽁y', '$1𑽂𑼫𑽁'],
 			['(' + consonant_a + ')𑽂𑼬𑽁w', '$1𑽂𑼬𑽂𑼮𑽁'],
 			['(' + consonant_a + ')𑽂𑼬𑽁y', '$1𑽂𑼬𑽂𑼫𑽁'],
 
