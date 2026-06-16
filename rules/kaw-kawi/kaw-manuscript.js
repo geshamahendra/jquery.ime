@@ -549,6 +549,12 @@
 			['(' + consonant_a + ')𑽁\u25CC.', '$1𑽁𑽊'],
 			['(' + consonant_a + ')𑽁\u25CC,', '$1𑽁𑽉'],
 
+			// special case : cakra & pengkal
+			//['(' + consonant_a + ')𑽁r', '$1𑽂𑼬𑽁'],
+			//['(' + consonant_a + ')𑽁y', '$1𑽂𑼫𑽁'],
+			['(' + consonant_a + ')𑽂𑼬𑽁w', '$1𑽂𑼬𑽂𑼮𑽁'],
+			['(' + consonant_a + ')𑽂𑼬𑽁y', '$1𑽂𑼬𑽂𑼫𑽁'],
+
 			// repha-dwita
 			['𑼬𑽁k', '𑼂𑼒𑽂𑼒𑽁'],
 			['𑼬𑽁K', '𑼂𑼒𑽂𑼓𑽁'],
@@ -726,10 +732,6 @@
 			['(' + consonant_a + ')𑽁S', '$1𑽂𑼰𑽁'],
 			['(' + consonant_a + ')𑽁s', '$1𑽂𑼱𑽁'],
 			['(' + consonant_a + ')𑽁h', '$1𑽂𑼲𑽁'],
-
-			// special case : cakra & pengkal
-			['(' + consonant_a + ')𑽁r', '$1𑽂𑼬𑽁'],
-			['(' + consonant_a + ')𑽁y', '$1𑽂𑼫𑽁'],
 
 			// special case: rwa-rya
 			['𑼂𑼮𑽂𑼮𑽁 ', '𑼬𑽂𑼮𑽁'],
