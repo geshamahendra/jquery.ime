@@ -822,23 +822,17 @@
 			[',', '', '᭞'],                 // koma
 			['/', '', '᭄'],                 // slash menjadi pangkon
 			['\\\\', '', '᭄'],              // backslash juga pangkon
-			['\\*', '', '᭛'],               // bintang untuk pada madya
-			['&', '', '᭛'],                 // ampersand untuk pada andhap
-			['\\^', '', '᭛'],               // caret untuk rerenggan tengen
-			['%', '', '᭛'],                 // persen untuk rerenggan kiwa
-			['\\$', '', '꧍'],               // dollar untuk tutup kurung aksara
-			['#', '', '꧌'],                 // hash untuk buka kurung aksara
-			['@', '', '᭚'],                 // at untuk pada guru
-			['!', '', '᭽'],                 // seru untuk pada pangkat
-			['\\(', '', '᭾'],               // kurung buka untuk pada luhur
-			['\\)', '', '᬴'],               // kurung tutup untuk cecak telu
 
-			// others
-			['\\+', '', '᭝'],               // plus (jika diperlukan)
-			['=', '', '᭝'],                 // sama dengan
-			['~', '', '᭄'],                 // tilde
-			['`', '', '᭄'],                 // backtick
-			['_', '', '᭄_'],                // underscore (untuk keperluan khusus Keyman, biarkan)
+			['\\*', '', 'ᭆ'],               // bintang untuk pada madya
+			['&', '', 'ᭊ'],                 // ampersand untuk pada andhap
+			['\\^', '', 'ᭉ'],               // caret untuk rerenggan tengen
+			['%', '', 'ᭈ'],                 // persen untuk rerenggan kiwa
+			['\\$', '', '᭽'],               // dollar untuk tutup kurung aksara
+			['#', '', '᭚'],                 // hash untuk buka kurung aksara
+			['@', '', '᭾'],                 // at untuk pada guru
+			['!', '', '᭛'],                 // seru untuk pada pangkat
+			['\\(', '', 'ᭋ'],               // kurung buka untuk pada luhur
+			['\\)', '', '᬴'],               // kurung tutup untuk cecak telu
 		]
 	};
 

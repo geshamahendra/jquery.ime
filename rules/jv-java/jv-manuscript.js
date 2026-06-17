@@ -843,13 +843,6 @@
 			['!', '', '꧋'],                 // seru untuk pada pangkat
 			['\\(', '', '꧅'],               // kurung buka untuk pada luhur
 			['\\)', '', '꦳'],               // kurung tutup untuk cecak telu
-
-			// others
-			['\\+', '', '꧇'],               // plus (jika diperlukan)
-			['=', '', '꧇'],                 // sama dengan
-			['~', '', '꧀'],                 // tilde
-			['`', '', '꧀'],                 // backtick
-			['_', '', '꧀_'],                // underscore (untuk keperluan khusus Keyman, biarkan)
 		]
 	};
 
