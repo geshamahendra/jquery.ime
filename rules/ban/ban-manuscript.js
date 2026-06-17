@@ -823,15 +823,15 @@
 			['/', '', '᭄'],                 // slash menjadi pangkon
 			['\\\\', '', '᭄'],              // backslash juga pangkon
 
-			['\\*', '', 'ᭆ'],               // bintang untuk pada madya
-			['&', '', 'ᭊ'],                 // ampersand untuk pada andhap
-			['\\^', '', 'ᭉ'],               // caret untuk rerenggan tengen
-			['%', '', 'ᭈ'],                 // persen untuk rerenggan kiwa
+			['\\*', '', 'ᭆ᭄'],               // bintang untuk pada madya
+			['&', '', 'ᭊ᭄'],                 // ampersand untuk pada andhap
+			['\\^', '', 'ᭉ᭄'],               // caret untuk rerenggan tengen
+			['%', '', 'ᭈ᭄'],                 // persen untuk rerenggan kiwa
 			['\\$', '', '᭽'],               // dollar untuk tutup kurung aksara
 			['#', '', '᭚'],                 // hash untuk buka kurung aksara
 			['@', '', '᭾'],                 // at untuk pada guru
 			['!', '', '᭛'],                 // seru untuk pada pangkat
-			['\\(', '', 'ᭋ'],               // kurung buka untuk pada luhur
+			['\\(', '', 'ᭋ᭄'],               // kurung buka untuk pada luhur
 			['\\)', '', '᬴'],               // kurung tutup untuk cecak telu
 		]
 	};
